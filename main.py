@@ -2,6 +2,8 @@ from flask import Flask, render_template, url_for, request, redirect
 import json
 import os
 
+food_containing_allergy = []
+
 dir = os.listdir("restaurant_menu")
 for i in range(len(dir)):
     dir[i] = dir[i].replace(".json", "")
@@ -30,14 +32,14 @@ def store():
     if request.method == "POST":
         allergy = request.form['allsearch'].lower().split(", ")
         check_allergy(restaurant, allergy)
-    return render_template("redirect.html", restaurant=restaurant.title())
+    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy)
 
 @app.route("/<rest>")
 def user(rest):
     return f"<h1>We do not have {rest} as a restaurant.</hr>"
 
 def check_allergy(restaurnat, allergy):
-    food_containing_allergy = []
+    global food_containing_allergy
     file = open(f"restaurant_menu/{restaurnat.replace(' ', '_')}.json", "r")
     menu = json.load(file)
     file.close()

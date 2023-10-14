@@ -3,22 +3,23 @@
 <head>
     <title>Safe Bite</title>
     <link rel="stylesheet" href="static/rest.css">
+    <style>
+      input[type=text] {
+      width: 50%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+}
+</style>
 </head>
 
 <body>
-<style>
-input[type=text] {
-  width: 50%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  font-size: 16px;
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-</style>
+
 
     <div class="banner">
         <div class="navbar">
@@ -45,5 +46,9 @@ input[type=text] {
     </div>
 
 <br><br><br>
+
+{% for food in food_containing_allergy %}
+    <h1>{{food}}</h1>
+{% endfor %}
 </body>
 </html>
