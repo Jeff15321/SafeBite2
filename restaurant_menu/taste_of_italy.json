@@ -1,0 +1,51 @@
+{
+  "Spaghetti Carbonara": [
+    "Spaghetti",
+    "Guanciale or pancetta, diced",
+    "Eggs",
+    "Pecorino Romano cheese, grated",
+    "Freshly ground black pepper",
+    "Salt"
+  ],
+  "Margherita Pizza": [
+    "Pizza dough",
+    "Tomato sauce",
+    "Mozzarella cheese, shredded",
+    "Fresh basil leaves",
+    "Olive oil",
+    "Salt"
+  ],
+  "Lasagna": [
+    "Lasagna noodles",
+    "Ground beef",
+    "Onion, chopped",
+    "Garlic, minced",
+    "Tomato sauce",
+    "Ricotta cheese",
+    "Mozzarella cheese, shredded",
+    "Parmesan cheese, grated",
+    "Egg",
+    "Fresh parsley, chopped"
+  ],
+  "Risotto alla Milanese": [
+    "Arborio rice",
+    "Saffron threads",
+    "Chicken or vegetable broth",
+    "Onion, finely chopped",
+    "White wine",
+    "Parmesan cheese, grated",
+    "Butter"
+  ],
+  "Osso Buco": [
+    "Veal shanks",
+    "Flour",
+    "Onion, chopped",
+    "Carrot, chopped",
+    "Celery, chopped",
+    "Garlic, minced",
+    "Tomato paste",
+    "White wine",
+    "Chicken or beef broth",
+    "Gremolata"
+  ]
+}
