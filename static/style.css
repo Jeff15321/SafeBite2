@@ -65,7 +65,7 @@
     font-weight: 100;
     line-height: 25px;
 }
-button{
+.scroll{
     width: 200px;
     padding: 15px 0px;
     text-align: center;
@@ -101,3 +101,4 @@ button:hover span{
 html {
   scroll-behavior: smooth;
 }
+
