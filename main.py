@@ -12,8 +12,10 @@ def home():
     else:
         return render_template("basic.html")
 
-@app.route("/tasteofitaly")
+@app.route("/tasteofitaly", methods=['POST','GET'])
 def italy():
+    if request.method == "POST":
+        allergy = request.form['allsearch'].lower()
     return render_template("italy.html")
 
 @app.route("/<rest>")
