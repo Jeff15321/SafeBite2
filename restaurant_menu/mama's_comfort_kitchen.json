@@ -1,0 +1,54 @@
+{
+  "Classic Cheeseburger": [
+    "Ground beef patty",
+    "Cheese slice",
+    "Burger bun",
+    "Lettuce",
+    "Tomato slices",
+    "Onion slices",
+    "Ketchup",
+    "Mustard",
+    "Pickles"
+  ],
+  "Macaroni and Cheese": [
+    "Elbow macaroni",
+    "Cheddar cheese, shredded",
+    "Milk",
+    "Butter",
+    "All-purpose flour",
+    "Salt",
+    "Black pepper"
+  ],
+  "Fried Chicken and Mashed Potatoes": [
+    "Chicken pieces",
+    "Flour",
+    "Buttermilk",
+    "Oil for frying",
+    "Potatoes",
+    "Butter",
+    "Milk",
+    "Salt",
+    "Gravy"
+  ],
+  "Meatloaf": [
+    "Ground beef",
+    "Bread crumbs",
+    "Onion, chopped",
+    "Ketchup",
+    "Egg",
+    "Milk",
+    "Salt",
+    "Black pepper"
+  ],
+  "Chicken Pot Pie": [
+    "Chicken chunks",
+    "Carrots, peas, and potatoes",
+    "Pie crust",
+    "Chicken broth",
+    "Flour",
+    "Butter",
+    "Milk",
+    "Salt",
+    "Black pepper"
+  ]
+}

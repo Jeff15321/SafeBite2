@@ -1,0 +1,39 @@
+{
+  "Nigiri Sushi (Tuna)": [
+    "Fresh tuna slices",
+    "Sushi rice",
+    "Soy sauce",
+    "Wasabi",
+    "Pickled ginger (gari)"
+  ],
+  "Salmon Sashimi": [
+    "Fresh salmon slices",
+    "Soy sauce",
+    "Wasabi",
+    "Pickled ginger (gari)"
+  ],
+  "California Roll": [
+    "Sushi rice",
+    "Imitation crab (or real crab), avocado, and cucumber",
+    "Nori (seaweed)",
+    "Soy sauce",
+    "Wasabi",
+    "Pickled ginger (gari)"
+  ],
+  "Eel Unagi Nigiri": [
+    "Grilled eel (unagi)",
+    "Sushi rice",
+    "Eel sauce",
+    "Soy sauce",
+    "Wasabi",
+    "Pickled ginger (gari)"
+  ],
+  "Rainbow Roll": [
+    "Sushi rice",
+    "Assorted sashimi slices (tuna, salmon, avocado, etc.)",
+    "Nori (seaweed)",
+    "Soy sauce",
+    "Wasabi",
+    "Pickled ginger (gari)"
+  ]
+}

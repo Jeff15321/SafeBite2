@@ -1,0 +1,41 @@
+{
+  "Green Garden Salad": [
+    "Mixed organic greens",
+    "Cherry tomatoes",
+    "Cucumber slices",
+    "Avocado slices",
+    "Red onion rings",
+    "Balsamic vinaigrette dressing"
+  ],
+  "Mediterranean Quinoa Wrap": [
+    "Organic quinoa",
+    "Hummus",
+    "Kalamata olives",
+    "Cherry tomatoes",
+    "Cucumber slices",
+    "Fresh spinach",
+    "Whole-grain wrap"
+  ],
+  "Tropical Smoothie": [
+    "Organic mango",
+    "Organic pineapple",
+    "Organic banana",
+    "Coconut milk",
+    "Honey or agave nectar (optional)"
+  ],
+  "Kale and Chickpea Salad": [
+    "Organic kale leaves",
+    "Chickpeas",
+    "Bell peppers",
+    "Red onion",
+    "Lemon-tahini dressing"
+  ],
+  "Acai Berry Bowl": [
+    "Organic acai puree",
+    "Granola",
+    "Fresh organic berries (strawberries, blueberries)",
+    "Banana slices",
+    "Coconut flakes",
+    "Honey drizzle"
+  ]
+}

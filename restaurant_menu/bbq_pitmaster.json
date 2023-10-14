@@ -1,0 +1,37 @@
+{
+  "Smoked BBQ Ribs": [
+    "Pork ribs",
+    "BBQ rub",
+    "Hickory wood chips",
+    "BBQ sauce"
+  ],
+  "Texas-Style Brisket": [
+    "Beef brisket",
+    "Salt",
+    "Black pepper",
+    "Smoked paprika",
+    "Garlic powder",
+    "Onion powder",
+    "Cayenne pepper",
+    "Wood chips for smoking"
+  ],
+  "Pulled Pork Sandwich": [
+    "Pork shoulder or butt",
+    "BBQ rub",
+    "Wood chips for smoking",
+    "BBQ sauce",
+    "Brioche buns",
+    "Coleslaw (optional)"
+  ],
+  "BBQ Chicken": [
+    "Chicken pieces (legs, wings, or thighs)",
+    "BBQ marinade or rub",
+    "Hickory wood chips",
+    "BBQ sauce"
+  ],
+  "Sausage Links": [
+    "Smoked sausage links",
+    "Mustard-based BBQ sauce (optional)",
+    "Bread or rolls for serving"
+  ]
+}
