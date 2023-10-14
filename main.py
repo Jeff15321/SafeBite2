@@ -41,15 +41,17 @@ def user(rest):
 def check_allergy(restaurnat, allergy):
     global food_containing_allergy
     file = open(f"restaurant_menu/{restaurnat.replace(' ', '_')}.json", "r")
-    menu = json.load(file)
+    dict = json.load(file)
     file.close()
 
-    for menu_item in menu:
-        for ingredient in menu[menu_item]:
+
+    for menu_item in dict["menu"]:
+        print(f"Menu item: {menu_item}")
+        for ingredient in dict["menu"][menu_item]['ingredients']:
+            print(f"Ingredient: {ingredient}")
             if ingredient.lower() in allergy and menu_item not in food_containing_allergy:
                 food_containing_allergy.append(menu_item)
 
-    print(f"Food containing allergy: {food_containing_allergy}")
 
 if __name__ == "__main__":
     app.run(debug=True)
