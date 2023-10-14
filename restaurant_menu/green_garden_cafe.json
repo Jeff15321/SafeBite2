@@ -1,41 +1,63 @@
 {
-  "Green Garden Salad": [
-    "Mixed organic greens",
-    "Cherry tomatoes",
-    "Cucumber slices",
-    "Avocado slices",
-    "Red onion rings",
-    "Balsamic vinaigrette dressing"
-  ],
-  "Mediterranean Quinoa Wrap": [
-    "Organic quinoa",
-    "Hummus",
-    "Kalamata olives",
-    "Cherry tomatoes",
-    "Cucumber slices",
-    "Fresh spinach",
-    "Whole-grain wrap"
-  ],
-  "Tropical Smoothie": [
-    "Organic mango",
-    "Organic pineapple",
-    "Organic banana",
-    "Coconut milk",
-    "Honey or agave nectar (optional)"
-  ],
-  "Kale and Chickpea Salad": [
-    "Organic kale leaves",
-    "Chickpeas",
-    "Bell peppers",
-    "Red onion",
-    "Lemon-tahini dressing"
-  ],
-  "Acai Berry Bowl": [
-    "Organic acai puree",
-    "Granola",
-    "Fresh organic berries (strawberries, blueberries)",
-    "Banana slices",
-    "Coconut flakes",
-    "Honey drizzle"
-  ]
+  "menu": {
+    "Green Garden Salad": {
+      "description": "A refreshing salad with mixed organic greens and a balsamic vinaigrette dressing.",
+      "price": 8.99,
+      "ingredients": [
+        "Mixed organic greens",
+        "Cherry tomatoes",
+        "Cucumber slices",
+        "Avocado slices",
+        "Red onion rings",
+        "Balsamic vinaigrette dressing"
+      ]
+    },
+    "Mediterranean Quinoa Wrap": {
+      "description": "A delicious wrap with organic quinoa, hummus, and fresh vegetables in a whole-grain wrap.",
+      "price": 10.99,
+      "ingredients": [
+        "Organic quinoa",
+        "Hummus",
+        "Kalamata olives",
+        "Cherry tomatoes",
+        "Cucumber slices",
+        "Fresh spinach",
+        "Whole-grain wrap"
+      ]
+    },
+    "Tropical Smoothie": {
+      "description": "A tropical delight with organic mango, pineapple, and coconut milk.",
+      "price": 6.99,
+      "ingredients": [
+        "Organic mango",
+        "Organic pineapple",
+        "Organic banana",
+        "Coconut milk",
+        "Honey or agave nectar (optional)"
+      ]
+    },
+    "Kale and Chickpea Salad": {
+      "description": "A healthy salad with organic kale leaves and a lemon-tahini dressing.",
+      "price": 7.99,
+      "ingredients": [
+        "Organic kale leaves",
+        "Chickpeas",
+        "Bell peppers",
+        "Red onion",
+        "Lemon-tahini dressing"
+      ]
+    },
+    "Acai Berry Bowl": {
+      "description": "A refreshing bowl with organic acai puree, granola, fresh berries, and honey drizzle.",
+      "price": 9.99,
+      "ingredients": [
+        "Organic acai puree",
+        "Granola",
+        "Fresh organic berries (strawberries, blueberries)",
+        "Banana slices",
+        "Coconut flakes",
+        "Honey drizzle"
+      ]
+    }
+  }
 }

@@ -1,69 +1,91 @@
 {
-  "Butter Chicken": [
-    "Boneless chicken pieces",
-    "Butter",
-    "Tomato puree",
-    "Cream",
-    "Ginger-garlic paste",
-    "Kasuri methi (dried fenugreek leaves)",
-    "Garam masala",
-    "Turmeric powder",
-    "Red chili powder",
-    "Salt",
-    "Fresh coriander leaves for garnish",
-    "Naan or rice for serving"
-  ],
-  "Tandoori Paneer Tikka": [
-    "Paneer (cottage cheese) cubes",
-    "Yogurt",
-    "Ginger-garlic paste",
-    "Tandoori masala",
-    "Lemon juice",
-    "Red chili powder",
-    "Salt",
-    "Bell peppers and onions for skewering",
-    "Mint chutney for serving"
-  ],
-  "Vegetable Biryani": [
-    "Basmati rice",
-    "Mixed vegetables (carrots, peas, beans)",
-    "Onions, sliced",
-    "Tomatoes, chopped",
-    "Ginger-garlic paste",
-    "Biryani masala",
-    "Saffron strands",
-    "Yogurt",
-    "Ghee (clarified butter)",
-    "Fresh coriander and mint leaves",
-    "Fried onions for garnish",
-    "Raita for serving"
-  ],
-  "Palak Paneer": [
-    "Paneer (cottage cheese)",
-    "Spinach leaves",
-    "Tomatoes, chopped",
-    "Onions, chopped",
-    "Ginger-garlic paste",
-    "Cumin seeds",
-    "Turmeric powder",
-    "Garam masala",
-    "Cream",
-    "Salt",
-    "Naan or rice for serving"
-  ],
-  "Lamb Rogan Josh": [
-    "Lamb pieces",
-    "Yogurt",
-    "Onions, finely chopped",
-    "Tomatoes, pureed",
-    "Ginger-garlic paste",
-    "Red chili powder",
-    "Turmeric powder",
-    "Garam masala",
-    "Cumin seeds",
-    "Kashmiri dry red chilies",
-    "Oil",
-    "Fresh coriander leaves for garnish",
-    "Naan or rice for serving"
-  ]
+  "menu": {
+    "Butter Chicken": {
+      "description": "Creamy and rich chicken dish with tender boneless chicken pieces in a buttery tomato-based sauce.",
+      "price": 13.99,
+      "ingredients": [
+        "Boneless chicken pieces",
+        "Butter",
+        "Tomato puree",
+        "Cream",
+        "Ginger-garlic paste",
+        "Kasuri methi (dried fenugreek leaves)",
+        "Garam masala",
+        "Turmeric powder",
+        "Red chili powder",
+        "Salt",
+        "Fresh coriander leaves for garnish",
+        "Naan or rice for serving"
+      ]
+    },
+    "Tandoori Paneer Tikka": {
+      "description": "Marinated paneer (cottage cheese) cubes grilled to perfection with bell peppers and onions.",
+      "price": 11.99,
+      "ingredients": [
+        "Paneer (cottage cheese) cubes",
+        "Yogurt",
+        "Ginger-garlic paste",
+        "Tandoori masala",
+        "Lemon juice",
+        "Red chili powder",
+        "Salt",
+        "Bell peppers and onions for skewering",
+        "Mint chutney for serving"
+      ]
+    },
+    "Vegetable Biryani": {
+      "description": "Fragrant and flavorful rice dish with mixed vegetables, biryani masala, and garnished with fried onions.",
+      "price": 12.99,
+      "ingredients": [
+        "Basmati rice",
+        "Mixed vegetables (carrots, peas, beans)",
+        "Onions, sliced",
+        "Tomatoes, chopped",
+        "Ginger-garlic paste",
+        "Biryani masala",
+        "Saffron strands",
+        "Yogurt",
+        "Ghee (clarified butter)",
+        "Fresh coriander and mint leaves",
+        "Fried onions for garnish",
+        "Raita for serving"
+      ]
+    },
+    "Palak Paneer": {
+      "description": "Paneer (cottage cheese) in a creamy spinach gravy, flavored with Indian spices.",
+      "price": 10.99,
+      "ingredients": [
+        "Paneer (cottage cheese)",
+        "Spinach leaves",
+        "Tomatoes, chopped",
+        "Onions, chopped",
+        "Ginger-garlic paste",
+        "Cumin seeds",
+        "Turmeric powder",
+        "Garam masala",
+        "Cream",
+        "Salt",
+        "Naan or rice for serving"
+      ]
+    },
+    "Lamb Rogan Josh": {
+      "description": "A flavorful and aromatic lamb curry with spices and tender pieces of lamb.",
+      "price": 14.99,
+      "ingredients": [
+        "Lamb pieces",
+        "Yogurt",
+        "Onions, finely chopped",
+        "Tomatoes, pureed",
+        "Ginger-garlic paste",
+        "Red chili powder",
+        "Turmeric powder",
+        "Garam masala",
+        "Cumin seeds",
+        "Kashmiri dry red chilies",
+        "Oil",
+        "Fresh coriander leaves for garnish",
+        "Naan or rice for serving"
+      ]
+    }
+  }
 }
