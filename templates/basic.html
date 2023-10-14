@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="static/logosafewhite.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>SAFE BITE</h1>
+            <p>Dining Without Doubt: Your Allergy-Friendly Guide</p>
+            <div>
+                <button type="button"><span></span>SEARCH</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<div class="aboutext">
 
+    <h1>Safe Bite</h1>
+    <p>Safe Bite is a platform for users to check if they can eat certain dishes with their dietary restrictions.</p>
+</div>
+    <style>
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(static/search.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+</style>
+<form class="form">
+    <input type="text" name="search" placeholder="Restaurant...">
+</form>
 </body>
 </html>
