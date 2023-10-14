@@ -94,6 +94,10 @@ button:hover span{
     width: 100%;
     border: none;
 }
+
 .aboutext{
     text-align: center
+}
+html {
+  scroll-behavior: smooth;
 }
