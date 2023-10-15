@@ -4,59 +4,59 @@
       "description": "A refreshing salad with mixed organic greens and a balsamic vinaigrette dressing.",
       "price": 8.99,
       "ingredients": [
-        "Mixed organic greens",
-        "Cherry tomatoes",
-        "Cucumber slices",
-        "Avocado slices",
-        "Red onion rings",
-        "Balsamic vinaigrette dressing"
+        "Greens",
+        "Tomatoes",
+        "Cucumber",
+        "Avocado",
+        "Onion",
+        "Vinaigrette"
       ]
     },
     "Mediterranean Quinoa Wrap": {
       "description": "A delicious wrap with organic quinoa, hummus, and fresh vegetables in a whole-grain wrap.",
       "price": 10.99,
       "ingredients": [
-        "Organic quinoa",
+        "Quinoa",
         "Hummus",
-        "Kalamata olives",
-        "Cherry tomatoes",
-        "Cucumber slices",
-        "Fresh spinach",
-        "Whole-grain wrap"
+        "Olives",
+        "Tomatoes",
+        "Cucumber",
+        "Spinach",
+        "Wrap"
       ]
     },
     "Tropical Smoothie": {
       "description": "A tropical delight with organic mango, pineapple, and coconut milk.",
       "price": 6.99,
       "ingredients": [
-        "Organic mango",
-        "Organic pineapple",
-        "Organic banana",
-        "Coconut milk",
-        "Honey or agave nectar (optional)"
+        "Mango",
+        "Pineapple",
+        "Banana",
+        "Coconut",
+        "Sweetener"
       ]
     },
     "Kale and Chickpea Salad": {
       "description": "A healthy salad with organic kale leaves and a lemon-tahini dressing.",
       "price": 7.99,
       "ingredients": [
-        "Organic kale leaves",
+        "Kale",
         "Chickpeas",
-        "Bell peppers",
-        "Red onion",
-        "Lemon-tahini dressing"
+        "Peppers",
+        "Onion",
+        "Dressing"
       ]
     },
     "Acai Berry Bowl": {
       "description": "A refreshing bowl with organic acai puree, granola, fresh berries, and honey drizzle.",
       "price": 9.99,
       "ingredients": [
-        "Organic acai puree",
+        "Acai",
         "Granola",
-        "Fresh organic berries (strawberries, blueberries)",
-        "Banana slices",
-        "Coconut flakes",
-        "Honey drizzle"
+        "Berries",
+        "Banana",
+        "Coconut",
+        "Honey"
       ]
     }
   }

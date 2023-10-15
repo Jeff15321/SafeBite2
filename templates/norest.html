@@ -65,45 +65,9 @@
             </ul>
         </div>
         <div class="content">
-            <h1>{{restaurant}}</h1>
-            <p>Authentic Italian cuisine with a modern twist, featuring handmade pasta and woodfired pizza</p>
-
-            <form method="post" class="form">
-    <center><input type="text" name="allsearch" placeholder="Dietary Restrictions..."></center>
-            </form>
-
-
+            <h1>We do not have {{rest}} as a Restaurant!</h1>
+            <p>If you are a restaurant owner, please add your Restaurant into our website!</p>
             <div>
             </div>
         </div>
     </div>
-
-<br><br>
-<div>
-   <!-- Spaghetti Carbonara (Green Background) -->
-
-    <!-- Lasagna (Transparent Background) -->
-
-<!--            <p style="margin-top: 32.5vh;"></p>-->
-            {% if safetrue %}
-                <br><h1> Can Eat! </h1> <br>
-            {%  endif %}
-            {% for item in safeitems %}
-                <div class="dish green-background", style="width: 50vw; margin: 0 auto;">
-                    <h2>{{ item[0] }} - {{ item[2] }}</h2>
-                    <p class="description"> {{ item[1] }}</p>
-                </div>
-            {% endfor %}
-            {% if unsafetrue %}
-                <br><h1> Can't Eat! </h1> <br>
-            {%  endif %}
-<!--            <p style="margin-top: 32.5vh;"></p>-->
-            {% for item in unsafeitems %}
-                <div class="dish gray-background", style="width: 50vw; margin: 0 auto;">
-                    <h2>{{ item[0] }} - {{ item[2] }}</h2>
-                    <p class="description"> {{ item[1] }}</p>
-                </div>
-            {% endfor %}
-    </div>
-</body>
-</html>

@@ -34,18 +34,49 @@ def store():
     if unsafeitems != [] or safeitems != []:
         unsafeitems = []
         safeitems = []
-    if request.method == "POST":
+    if request.method == "GET":
+        file = open(f"restaurant_menu/{restaurant.replace(' ', '_')}.json", "r")
+        dict = json.load(file)
+        file.close()
+        for menu_item in dict["menu"]:
+            safeitems.append([menu_item, dict["menu"][menu_item]["description"], "$" + str(dict["menu"][menu_item]["price"])])
+    elif request.method == "POST":
         allergy = request.form['allsearch'].lower().split(", ")
         check_allergy(restaurant, allergy)
-    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy, safeitems=safeitems, unsafeitems=unsafeitems)
+
+    safecount = len(safeitems)
+    totalcount = len(safeitems) + len(unsafeitems)
+    if totalcount != 0:
+        safepercent = safecount / totalcount
+    else:
+        safepercent = 0
+    if len(safeitems) != 0:
+        safetrue = True
+    else:
+        safetrue = False
+    if len(unsafeitems) != 0:
+        unsafetrue = True
+    else:
+        unsafetrue = False
+    return render_template("redirect.html",
+                           safetrue=safetrue,
+                           unsafetrue=unsafetrue,
+                           restaurant=restaurant.title(),
+                           safepercent=safepercent,
+                           food_containing_allergy=food_containing_allergy,
+                           safeitems=safeitems,
+                           unsafeitems=unsafeitems)
 
 @app.route("/<rest>")
 def user(rest):
-    return f"<h1>We do not have {rest} as a restaurant.</hr>"
-
+    return render_template("norest.html", rest=rest)
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+@app.route("/rest")
+def rest():
+    return render_template("rest.html")
 def check_allergy(restaurnat, allergy):
-    global food_containing_allergy
-    global safeitems, unsafeitems
     file = open(f"restaurant_menu/{restaurnat.replace(' ', '_')}.json", "r")
     dict = json.load(file)
     file.close()
@@ -61,7 +92,7 @@ def check_allergy(restaurnat, allergy):
             safeitems.append([menu_item, dict["menu"][menu_item]["description"], "$" + str(dict["menu"][menu_item]["price"])])
         else:
             unsafeitems.append([menu_item, dict["menu"][menu_item]["description"], "$" + str(dict["menu"][menu_item]["price"])])
-
+    food_containing_allergy.clear()
     print(safeitems)
     print(unsafeitems)
 

@@ -4,57 +4,70 @@
       "description": "Fresh tuna slices on a bed of sushi rice, served with soy sauce, wasabi, and pickled ginger.",
       "price": 15.99,
       "ingredients": [
-        "Fresh tuna slices",
-        "Sushi rice",
-        "Soy sauce",
+        "Tuna",
+        "Rice",
+        "beans",
         "Wasabi",
-        "Pickled ginger (gari)"
+        "ginger",
+        "Gluten",
+        "Seafood"
       ]
     },
     "Salmon Sashimi": {
       "description": "Thinly sliced fresh salmon, served with soy sauce, wasabi, and pickled ginger.",
       "price": 14.99,
       "ingredients": [
-        "Fresh salmon slices",
-        "Soy sauce",
+        "Salmon",
+        "beans",
         "Wasabi",
-        "Pickled ginger (gari)"
+        "ginger",
+        "Gluten",
+        "Seafood"
       ]
     },
     "California Roll": {
-      "description": "A classic roll with sushi rice, crab (real or imitation), avocado, and cucumber wrapped in seaweed.",
+      "description": "A classic roll with rice, crab, avocado, and cucumber wrapped in seaweed.",
       "price": 13.99,
       "ingredients": [
-        "Sushi rice",
-        "Imitation crab (or real crab), avocado, and cucumber",
-        "Nori (seaweed)",
-        "Soy sauce",
+        "Rice",
+        "Crab",
+        "Avocado",
+        "Cucumber",
+        "Seaweed",
+        "beans",
         "Wasabi",
-        "Pickled ginger (gari)"
+        "ginger",
+        "Gluten",
+        "Seafood"
       ]
     },
     "Eel Unagi Nigiri": {
-      "description": "Grilled eel (unagi) on a small bed of sushi rice, drizzled with eel sauce and served with soy sauce, wasabi, and pickled ginger.",
+      "description": "Grilled eel on a small bed of rice, drizzled with eel sauce and served with soy sauce, wasabi, and pickled ginger.",
       "price": 16.99,
       "ingredients": [
-        "Grilled eel (unagi)",
-        "Sushi rice",
-        "Eel sauce",
-        "Soy sauce",
+        "Eel",
+        "Rice",
+        "Eel",
+        "beans",
         "Wasabi",
-        "Pickled ginger (gari)"
+        "ginger",
+        "Gluten",
+        "Seafood"
       ]
     },
     "Rainbow Roll": {
-      "description": "A colorful roll with sushi rice, assorted sashimi slices, and avocado, wrapped in seaweed.",
+      "description": "A colorful roll with rice, assorted sashimi slices, and avocado, wrapped in seaweed.",
       "price": 17.99,
       "ingredients": [
-        "Sushi rice",
-        "Assorted sashimi slices (tuna, salmon, avocado, etc.)",
-        "Nori (seaweed)",
-        "Soy sauce",
+        "Rice",
+        "Sashimi",
+        "Avocado",
+        "Seaweed",
+        "beans",
         "Wasabi",
-        "Pickled ginger (gari)"
+        "ginger",
+        "Gluten",
+        "Seafood"
       ]
     }
   }
