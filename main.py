@@ -30,7 +30,10 @@ def home():
 
 @app.route("/restaurant", methods=['POST','GET'])
 def store():
-    global allergy
+    global allergy, unsafeitems, safeitems
+    if unsafeitems != [] or safeitems != []:
+        unsafeitems = []
+        safeitems = []
     if request.method == "POST":
         allergy = request.form['allsearch'].lower().split(", ")
         check_allergy(restaurant, allergy)
@@ -61,7 +64,6 @@ def check_allergy(restaurnat, allergy):
 
     print(safeitems)
     print(unsafeitems)
-
 
 
 if __name__ == "__main__":
