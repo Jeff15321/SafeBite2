@@ -19,7 +19,8 @@
         "Gluten",
         "Lactose",
         "Non-vegan",
-        "Halal"
+        "Halal",
+        "dairy"
       ]
     },
     "Tandoori Paneer Tikka": {
@@ -39,7 +40,8 @@
         "Gluten",
         "Lactose",
         "Non-vegan",
-        "Halal"
+        "Halal",
+        "dairy"
       ]
     },
     "Vegetable Biryani": {
@@ -61,7 +63,8 @@
         "Raita",
         "Gluten",
         "Lactose",
-        "Halal"
+        "Halal",
+        "dairy"
       ]
     },
     "Palak Paneer": {
@@ -82,7 +85,8 @@
         "Gluten",
         "Lactose",
         "Non-vegan",
-        "Halal"
+        "Halal",
+        "dairy"
       ]
     },
     "Lamb Rogan Josh": {
@@ -105,7 +109,8 @@
         "Gluten",
         "Lactose",
         "Non-vegan",
-        "Halal"
+        "Halal",
+        "dairy"
       ]
     }
   }

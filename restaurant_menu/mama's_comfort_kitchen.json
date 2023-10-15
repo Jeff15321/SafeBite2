@@ -4,77 +4,87 @@
       "description": "A classic cheeseburger with a juicy ground beef patty, cheese, and fresh toppings.",
       "price": 9.99,
       "ingredients": [
-        "Ground beef patty",
-        "Cheese slice",
-        "Burger bun",
+        "beef",
+        "Cheese",
+        "wheat",
         "Lettuce",
-        "Tomato slices",
-        "Onion slices",
+        "Tomato",
+        "Onion",
         "Ketchup",
         "Mustard",
         "Pickles",
-        "non-vegan"
+        "non-vegan",
+        "dairy",
+        "lactose"
       ]
     },
     "Macaroni and Cheese": {
       "description": "Creamy macaroni and cheese made with elbow macaroni and shredded cheddar cheese.",
       "price": 8.99,
       "ingredients": [
-        "Elbow macaroni",
-        "Cheddar cheese, shredded",
+        "macaroni",
+        "cheese",
         "Milk",
         "Butter",
-        "All-purpose flour",
+        "flour",
         "Salt",
-        "Black pepper",
-        "non-vegan"
+        "pepper",
+        "non-vegan",
+        "dairy",
+        "lactose"
       ]
     },
     "Fried Chicken and Mashed Potatoes": {
       "description": "Crispy fried chicken served with mashed potatoes and gravy.",
       "price": 12.99,
       "ingredients": [
-        "Chicken pieces",
+        "Chicken",
         "Flour",
-        "Buttermilk",
-        "Oil for frying",
+        "milk",
+        "Oil",
         "Potatoes",
         "Butter",
         "Milk",
         "Salt",
         "Gravy",
-        "non-vegan"
+        "non-vegan",
+        "dairy",
+        "lactose"
       ]
     },
     "Meatloaf": {
       "description": "Homemade meatloaf with ground beef, bread crumbs, and savory seasonings.",
       "price": 10.99,
       "ingredients": [
-        "Ground beef",
-        "Bread crumbs",
-        "Onion, chopped",
-        "Ketchup",
+        "beef",
+        "flour",
+        "Onion",
+        "tomato",
         "Egg",
         "Milk",
         "Salt",
-        "Black pepper",
-        "non-vegan"
+        "pepper",
+        "non-vegan",
+        "dairy",
+        "lactose"
       ]
     },
     "Chicken Pot Pie": {
       "description": "A comforting chicken pot pie with tender chicken, vegetables, and a flaky pie crust.",
       "price": 11.99,
       "ingredients": [
-        "Chicken chunks",
-        "Carrots, peas, and potatoes",
-        "Pie crust",
-        "Chicken broth",
+        "Chicken",,
+        "pea",
+        "potato"
+        "Carrot",
         "Flour",
         "Butter",
         "Milk",
         "Salt",
-        "Black pepper",
-        "non-vegan"
+        "pepper",
+        "non-vegan",
+        "dairy",
+        "lactose"
       ]
     }
   }
