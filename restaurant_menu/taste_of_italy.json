@@ -5,22 +5,22 @@
       "price": 12.99,
       "ingredients": [
         "Spaghetti",
-        "Guanciale or pancetta, diced",
+        "Guanciale",
         "Egg",
-        "Pecorino Romano cheese, grated",
-        "Freshly ground black pepper",
-        "Salt"
+        "cheese",
+        "pepper",
+        "Salt",
+        "Non-vegan"
       ]
     },
     "Margherita Pizza": {
       "description": "Traditional pizza with tomato sauce, mozzarella cheese, fresh basil leaves, and olive oil.",
       "price": 10.99,
       "ingredients": [
-        "Pizza dough",
-        "Tomato sauce",
-        "Mozzarella cheese, shredded",
-        "Fresh basil leaves",
-        "Olive oil",
+        "Tomato",
+        "cheese",
+        "basil",
+        "Olive",
         "Salt"
       ]
     },
@@ -28,45 +28,46 @@
       "description": "Layered pasta dish with ground beef, tomato sauce, ricotta cheese, mozzarella cheese, Parmesan cheese, and fresh parsley.",
       "price": 13.99,
       "ingredients": [
-        "Lasagna noodles",
-        "Ground beef",
-        "Onion, chopped",
-        "Garlic, minced",
-        "Tomato sauce",
-        "Ricotta cheese",
-        "Mozzarella cheese, shredded",
-        "Parmesan cheese, grated",
+        "noodles",
+        "beef",
+        "Onion",
+        "Garlic",
+        "Tomato",
+        "cheese",
         "Egg",
-        "Fresh parsley, chopped"
+        "parsley",
+        "Non-vegan"
       ]
     },
     "Risotto alla Milanese": {
       "description": "Creamy saffron-infused risotto with Arborio rice, onion, white wine, Parmesan cheese, and butter.",
       "price": 11.99,
       "ingredients": [
-        "Arborio rice",
-        "Saffron threads",
-        "Chicken or vegetable broth",
-        "Onion, finely chopped",
-        "White wine",
-        "Parmesan cheese, grated",
-        "Butter"
+        "rice",
+        "Saffron",
+        "Chicken",
+        "Onion",
+        "wine",
+        "cheese",
+        "Butter",
+        "Non-vegan"
       ]
     },
     "Osso Buco": {
       "description": "Braised veal shanks with a rich tomato and white wine sauce, served with gremolata.",
       "price": 15.99,
       "ingredients": [
-        "Veal shanks",
+        "Veal",
         "Flour",
-        "Onion, chopped",
-        "Carrot, chopped",
-        "Celery, chopped",
-        "Garlic, minced",
-        "Tomato paste",
-        "White wine",
-        "Chicken or beef broth",
-        "Gremolata"
+        "Onion",
+        "Carrot",
+        "Celery",
+        "Garlic",
+        "Tomato",
+        "wine",
+        "Chicken",
+        "Gremolata",
+        "Non-vegan"
       ]
     }
   }

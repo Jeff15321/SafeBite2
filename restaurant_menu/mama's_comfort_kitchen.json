@@ -12,7 +12,8 @@
         "Onion slices",
         "Ketchup",
         "Mustard",
-        "Pickles"
+        "Pickles",
+        "non-vegan"
       ]
     },
     "Macaroni and Cheese": {
@@ -25,7 +26,8 @@
         "Butter",
         "All-purpose flour",
         "Salt",
-        "Black pepper"
+        "Black pepper",
+        "non-vegan"
       ]
     },
     "Fried Chicken and Mashed Potatoes": {
@@ -40,7 +42,8 @@
         "Butter",
         "Milk",
         "Salt",
-        "Gravy"
+        "Gravy",
+        "non-vegan"
       ]
     },
     "Meatloaf": {
@@ -54,7 +57,8 @@
         "Egg",
         "Milk",
         "Salt",
-        "Black pepper"
+        "Black pepper",
+        "non-vegan"
       ]
     },
     "Chicken Pot Pie": {
@@ -69,7 +73,8 @@
         "Butter",
         "Milk",
         "Salt",
-        "Black pepper"
+        "Black pepper",
+        "non-vegan"
       ]
     }
   }

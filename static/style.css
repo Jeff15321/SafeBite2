@@ -96,7 +96,7 @@ button:hover span{
 }
 
 .aboutext{
-    text-align: center
+    text-align: center;
     font-size: 23px;
     margin-top:8.5%;
     margin-bottom: 20px;
@@ -106,4 +106,3 @@ button:hover span{
 html {
   scroll-behavior: smooth;
 }
-
