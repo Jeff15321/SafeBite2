@@ -1,0 +1,58 @@
+{
+  "menu": {
+    "Smoked BBQ Ribs": {
+      "description": "Tender and flavorful pork ribs with a smoky BBQ flavor.",
+      "price": 12.99,
+      "ingredients": [
+        "Pork ribs",
+        "BBQ rub",
+        "Hickory wood chips",
+        "BBQ sauce"
+      ]
+    },
+    "Texas-Style Brisket": {
+      "description": "Slow-smoked beef brisket with a perfect blend of spices and flavors.",
+      "price": 14.99,
+      "ingredients": [
+        "Beef brisket",
+        "Salt",
+        "Black pepper",
+        "Smoked paprika",
+        "Garlic powder",
+        "Onion powder",
+        "Cayenne pepper",
+        "Wood chips for smoking"
+      ]
+    },
+    "Pulled Pork Sandwich": {
+      "description": "Pulled pork served on a brioche bun with optional coleslaw.",
+      "price": 10.99,
+      "ingredients": [
+        "Pork shoulder or butt",
+        "BBQ rub",
+        "Wood chips for smoking",
+        "BBQ sauce",
+        "Brioche buns"
+      ]
+    },
+    "BBQ Chicken": {
+      "description": "Juicy chicken pieces with a delightful BBQ marinade and sauce.",
+      "price": 11.99,
+      "ingredients": [
+        "Chicken pieces (legs, wings, or thighs)",
+        "BBQ marinade or rub",
+        "Hickory wood chips",
+        "BBQ sauce"
+      ]
+    },
+    "Sausage Links": {
+      "description": "Savory smoked sausage links with the option of mustard-based BBQ sauce.",
+      "price": 9.99,
+      "ingredients": [
+        "Smoked sausage links",
+        "Mustard-based BBQ sauce (optional)",
+        "Bread or rolls for serving"
+      ]
+    }
+  }
+}

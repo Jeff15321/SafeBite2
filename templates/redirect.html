@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safe Bite</title>
+    <link rel="stylesheet" href="static/rest.css">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #FF5733;
+        }
+        .dish {
+            text-align: center;
+            border: 1px solid #333;
+            margin: 10px;
+            padding: 10px;
+        }
+        .dish h2 {
+            text-align: center;
+            padding-top: 5px;
+            color: #FF5733;
+        }
+        .description {
+            padding: 10px;
+            font-style: italic;
+        }
+
+        .green-background {
+            background-color: #7FFF7F; /* Light green background color /
+        }
+        .gray-background {
+            background-color: #C0C0C0; / Light gray background color */
+        }
+        .transparent-background {
+            background-color: transparent;
+        }
+        input[type=text] {
+          width: 50%;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 10px;
+          font-size: 16px;
+          background-color: white;
+          background-position: 10px 10px;
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 40px;
+        }
+
+</style>
+</head>
+
+<body>
+
+
+    <div class="banner">
+        <div class="navbar">
+            <img src="static/logosafewhite.png" class="logo">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>{{restaurant}}</h1>
+            <p>Authentic Italian cuisine with a modern twist, featuring handmade pasta and woodfired pizza</p>
+
+            <form method="post" class="form">
+    <center><input type="text" name="allsearch" placeholder="Dietary Restrictions..."></center>
+            </form>
+
+
+            <div>
+            </div>
+        </div>
+    </div>
+
+<br><br><br>
+<div>
+   <!-- Spaghetti Carbonara (Green Background) -->
+
+    <!-- Lasagna (Transparent Background) -->
+
+<!--            <p style="margin-top: 32.5vh;"></p>-->
+            {% for item in unsafeitems %}
+                <div class="dish gray-background", style="width: 50vw; margin: 0 auto;">
+                    <h2>{{ item[0] }} - {{ item[1] }}</h2>
+                    <p class="description"> {{ item[2] }}</p>
+                </div>
+            {% endfor %}
+
+<!--            <p style="margin-top: 32.5vh;"></p>-->
+            <br><br><br><br><br>
+            {% for item in safeitems %}
+                <div class="dish green-background", style="width: 50vw; margin: 0 auto;">
+                    <h2>{{ item[0] }} - {{ item[1] }}</h2>
+                    <p class="description"> {{ item[2] }}</p>
+                </div>
+            {% endfor %}
+
+    </div>
+</body>
+</html>
