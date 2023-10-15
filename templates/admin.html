@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safe Bite | Admin</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<style>
+    .content1{
+        width: 100%;
+        transform: translateY(-35%);
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+        .container {
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 75%;
+            text-align: center;
+        }
+        h1 {
+            color: #d65151;
+        }
+        .form-label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .input-field {
+            width: 90%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+            align-items: center;
+        }
+        .tag {
+            background-color: #d65151;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+<body style="background-color: #D1543f;">
+    <div class="banner">
+        <div class="navbar">
+            <img src="static/logosafewhite.png" class="logo">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="/admin">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="content1">
+            <div class="container">
+        <h1>RESTAURANT INTERFACE</h1>
+        <form id="admin-form">
+            <label for="restaurant-name" class="form-label">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" class="input-field" name="restaurant-name" required>
+            <br><br>
+            <label for="dish-name" class="form-label">Dish Name:</label>
+            <input type="text" id="dish-name" class="input-field" name="dish-name" required>
+            <br><br>
+            <label for="ingredients" class="form-label">Ingredients (press enter to submit):</label>
+            <input type="text" id="ingredients" class="input-field" name="ingredients" onkeyup="addIngredient(event)">
+            <div class="tag-container" id="tag-container">
+                <!-- Ingredients will be displayed here as separate boxes -->
+            </div>
+        </form>
+    </div>
+        </div>
+</body>
+
+
+    <script>
+        function addIngredient(event) {
+            if (event.key === 'Enter' && event.target.value.trim() !== '') {
+                const tagContainer = document.getElementById('tag-container');
+                const newTag = document.createElement('div');
+                newTag.className = 'tag';
+                newTag.textContent = event.target.value;
+                tagContainer.appendChild(newTag);
+                event.target.value = '';
+            }
+        }
+    </script>
+</body>
+</html>

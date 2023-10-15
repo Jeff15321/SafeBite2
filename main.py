@@ -69,10 +69,14 @@ def store():
 
 @app.route("/<rest>")
 def user(rest):
-    return f"<h1>We do not have {rest} as a restaurant.</hr>"
-
+    return render_template("norest.html", rest=rest)
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+@app.route("/rest")
+def rest():
+    return render_template("rest.html")
 def check_allergy(restaurnat, allergy):
-
     file = open(f"restaurant_menu/{restaurnat.replace(' ', '_')}.json", "r")
     dict = json.load(file)
     file.close()
