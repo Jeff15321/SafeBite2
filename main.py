@@ -34,14 +34,15 @@ def store():
     if request.method == "POST":
         allergy = request.form['allsearch'].lower().split(", ")
         check_allergy(restaurant, allergy)
-    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy)
+    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy, safeitems=safeitems, unsafetimes=unsafeitems)
 
 @app.route("/<rest>")
 def user(rest):
     return f"<h1>We do not have {rest} as a restaurant.</hr>"
 
 def check_allergy(restaurnat, allergy):
-    global food_containing_allergy, safeitems, unsafeitems
+    global food_containing_allergy
+    global safeitems, unsafeitems
     file = open(f"restaurant_menu/{restaurnat.replace(' ', '_')}.json", "r")
     dict = json.load(file)
     file.close()
@@ -54,9 +55,9 @@ def check_allergy(restaurnat, allergy):
             if ingredient.lower() in allergy and menu_item not in food_containing_allergy:
                 food_containing_allergy.append(menu_item)
         if menu_item not in food_containing_allergy:
-            safeitems.append([menu_item, dict["menu"][menu_item]["description"], "$" + str(dict["menu"][menu_item]["price"])])
+            safeitems.append([menu_item, dict["menu"][menu_item]["description"], str(dict["menu"][menu_item]["price"])])
         else:
-            unsafeitems.append([menu_item, dict["menu"][menu_item]["description"], "$" + str(dict["menu"][menu_item]["price"])])
+            unsafeitems.append([menu_item, dict["menu"][menu_item]["description"], str(dict["menu"][menu_item]["price"])])
 
     print(safeitems)
     print(unsafeitems)

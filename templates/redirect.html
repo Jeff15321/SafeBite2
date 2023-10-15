@@ -46,9 +46,27 @@
     </div>
 
 <br><br><br>
+<div>
+   <!-- Spaghetti Carbonara (Green Background) -->
 
-{% for food in food_containing_allergy %}
-    <h1>{{food}}</h1>
-{% endfor %}
+    <!-- Lasagna (Transparent Background) -->
+            <p style="margin-top: 32.5vh;"></p>
+            {% for item in safeitems %}
+                <div class="dish green-background", style="width: 50vw; margin: 0 auto;">
+                    <h2>{{ item[0] }} - ${{ item[1] }}</h2>
+                    <p class="description"> {{ item[2] }}</p>
+                </div>
+                <div></div>
+              <br>
+            {% endfor %}
+            {% for item in unsafeitems %}
+                <div class="dish gray-background", style="width: 50vw; margin: 0 auto;">
+                    <h2>{{ item[0] }} - ${{ item[1] }}</h2>
+                    <p class="description"> {{ item[2] }}</p>
+                </div>
+                <div></div>
+              <br>
+            {% endfor %}
+    </div>
 </body>
 </html>
