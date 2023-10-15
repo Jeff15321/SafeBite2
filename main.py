@@ -34,7 +34,7 @@ def store():
     if request.method == "POST":
         allergy = request.form['allsearch'].lower().split(", ")
         check_allergy(restaurant, allergy)
-    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy, safeitems=safeitems, unsafetimes=unsafeitems)
+    return render_template("redirect.html", restaurant=restaurant.title(), food_containing_allergy=food_containing_allergy, safeitems=safeitems, unsafeitems=unsafeitems)
 
 @app.route("/<rest>")
 def user(rest):
