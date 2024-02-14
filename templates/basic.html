@@ -3,16 +3,60 @@
 <head>
     <title>Safe Bite</title>
     <link rel="stylesheet" href="static/style.css">
+    <script>
+        function showDropDown() {
+          document.getElementById("myDropdown").classList.add("show");
+        }
+
+        document.addEventListener('click', function(event) {
+          var input = document.getElementById('restaurant_search');
+          var dropdown = document.getElementById('myDropdown');
+
+          if (event.target !== input && event.target !== dropdown && !dropdown.contains(event.target)) {
+            document.getElementById("myDropdown").classList.remove("show");
+          }
+
+          if (event.target.tagName === 'A') {
+            var selectedRestaurant = event.target.textContent || event.target.innerText;
+
+            selectedRestaurant = selectedRestaurant.trim();
+            var restaurant_search = document.getElementById('restaurant_search');
+            restaurant_search.value = selectedRestaurant;
+
+            var form = document.getElementById('searchbar');
+            form.submit();
+          }
+        });
+
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("restaurant_search");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+    </script>
 </head>
 <body style="background-color: #D1543f;">
     <div class="banner">
         <div class="navbar">
-            <img src="static/logosafewhite.png" class="logo">
+            <a href="/">
+                <img src="static/logosafewhite.png" class="logo">
+            </a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="/rest">Restaurants</a></li>
-                <li><a href="/admin">Admin</a></li>
+                <li><a href="/admin">Restaurant Interface</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/change_password">Change Passowrd</a></li>
+                <li><a href="/logout">Logout</a></li>
             </ul>
         </div>
         <div class="content">
@@ -45,9 +89,17 @@ input[type=text] {
 }
 </style>
 <form method="post" class="form" id="searchbar">
-    <center><input type="text" name="restsearch" placeholder="Restaurant..."></center>
+    <center><input type="text" id="restaurant_search" onkeyup="filterFunction()" name="restaurant_search" autocomplete="off" placeholder="Restaurant..." onclick="showDropDown()" > <button class="round-button" type="submit"><span></span> Search </button> </center>
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+            {% for rest in restaurant_list %}
+                <a> {{ rest[0]|title }} - {{rest[1]|title}} </a>
+            {% endfor %}
+        </div>
+      </div>
+
 </form>
-    <div class="aboutext"><p>Some of our recommended restaurants: Taste of Italy, Sushi Delight, Spice Haven...</p></div><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
     <footer style="background-color: #ff9933">
         <br>
         <div style="text-align: right; margin-right: 40px; font-size: 20px;" >Help Center  |  Email  |  Phone  |  Blog  |  FAQ</div>

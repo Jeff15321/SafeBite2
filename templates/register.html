@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safe Bite | register</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body style="background-color: #D1543f;">
+
+    <div class="banner">
+        <div class="navbar">
+            <a href="/">
+                <img src="static/logosafewhite.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin">Restaurant Interface</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/change_password">Change Passowrd</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content1" style="margin-top: 100px">
+        <div class="container">
+    <h1 class="admin-title">RESTAURANT REGISTER</h1>
+    <form action="/register"  method="post">
+        <label for="restaurant_name" autocomplete="off" class="form-label">Restaurant Name (Do not include any symbols):</label>
+        <input type="text" id="restaurant_name" autocomplete="off" class="input-field" name="restaurant_name">
+        <br><br>
+        <label for="description" autocomplete="off" class="form-label">Restaurant Description (Optional):</label>
+        <input type="text" id="description" autocomplete="off" class="input-field" name="description">
+        <br><br>
+        <label for="location" autocomplete="off" class="form-label">Location:</label>
+        <div style="display: flex">
+            <input placeholder="Country" type="text" id="country" autocomplete="off" class="input-field" name="country" style="margin-left: 60px; width: 400px">
+            <input placeholder="City" type="text" id="city" autocomplete="off" class="input-field" name="city" style="margin-left: 10px; width: 400px">
+            <input placeholder="Street Address" type="text" id="street" autocomplete="off" class="input-field" name="street" style="margin-left: 10px; width: 400px">
+        </div>
+
+        <input type="text" id="location" autocomplete="off" class="input-field" name="location" style="display: None">
+
+        <br><br>
+        <label for="username" autocomplete="off" class="form-label">Username:</label>
+        <input type="text" id="username" autocomplete="off" class="input-field" name="username">
+        <br><br>
+        <label for="password" class="form-label">Password:</label>
+        <input type="text" id="password" autocomplete="off" class="input-field" name="password">
+        <br><br>
+        <label for="confirmation" class="form-label">Confirm Password:</label>
+        <input type="text" id="confirmation" autocomplete="off" class="input-field" name="confirmation">
+        <br><br>
+        <button class="round-button" id="register_button" name="register_button" type="submit"> Register </button>
+    </form>
+    </div>
+    </div>
+</body>
+</body>
+</html>

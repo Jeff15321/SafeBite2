@@ -56,20 +56,23 @@
 
     <div class="banner">
         <div class="navbar">
-            <img src="static/logosafewhite.png" class="logo">
+            <a href="/">
+                <img src="static/logosafewhite.png" class="logo">
+            </a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="/rest">Restaurants</a></li>
-                <li><a href="#">Admin</a></li>
+                <li><a href="/admin">Restaurant Interface</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/change_password">Change Passowrd</a></li>
+                <li><a href="/logout">Logout</a></li>
             </ul>
         </div>
         <div class="content">
-            <h1>{{restaurant}}</h1>
-            <p>Authentic Italian cuisine with a modern twist, featuring handmade pasta and woodfired pizza</p>
+            <h1>{{restaurant|title }}</h1>
+            <p>{{description}}</p>
 
             <form method="post" class="form">
-    <center><input type="text" name="allsearch" placeholder="Dietary Restrictions..."></center>
+    <center><input type="text" autocomplete="off" name="allergy_search" placeholder="Dietary Restrictions... (If there are multiple, separate allergies with a comma. E.g. lactose, chicken"></center>
             </form>
 
 
@@ -90,8 +93,18 @@
             {%  endif %}
             {% for item in safeitems %}
                 <div class="dish green-background", style="width: 50vw; margin: 0 auto;">
-                    <h2>{{ item[0] }} - {{ item[2] }}</h2>
+                    <h2>{{ item[0]|title  }} - ${{ item[2] }}</h2>
                     <p class="description"> {{ item[1] }}</p>
+                    {% if admintrue %}
+                        <p>(ONLY VISIBLE TO ADMIN) Ingredients:
+                            {% for i in item[4:] %}
+                                {{ ', ' if loop.index > 1 else '' }}{{ i[0]|title  }}
+                            {% endfor %}
+                            {% if item[4] == ('',) %}
+                                None
+                            {% endif %}
+                        </p>
+                    {% endif %}
                 </div>
             {% endfor %}
             {% if unsafetrue %}
@@ -100,8 +113,18 @@
 <!--            <p style="margin-top: 32.5vh;"></p>-->
             {% for item in unsafeitems %}
                 <div class="dish gray-background", style="width: 50vw; margin: 0 auto;">
-                    <h2>{{ item[0] }} - {{ item[2] }}</h2>
+                    <h2>{{ item[0]|title  }} - ${{ item[2] }}</h2>
                     <p class="description"> {{ item[1] }}</p>
+                    {% if admintrue %}
+                        <p>(ONLY VISIBLE TO ADMIN) Ingredients:
+                            {% for i in item[4:] %}
+                                {{ ', ' if loop.index > 1 else '' }}{{ i[0]|title  }}
+                            {% endfor %}
+                            {% if item[4] == ('',) %}
+                                None
+                            {% endif %}
+                        </p>
+                    {% endif %}
                 </div>
             {% endfor %}
     </div>

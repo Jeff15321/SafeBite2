@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safe Bite | login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body style="background-color: #D1543f;">
+
+    <div class="banner">
+        <div class="navbar">
+            <a href="/">
+                <img src="static/logosafewhite.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin">Restaurant Interface</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/change_password">Change Passowrd</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="container">
+    <h1 class="admin-title">RESTAURANT LOGIN</h1>
+    <form action="/login", method="post">
+        <label for="username" autocomplete="off" class="form-label">Restaurant Username:</label>
+        <input type="text" id="username" autocomplete="off" class="input-field" name="username">
+        <br><br>
+        <label for="password" class="form-label">Password:</label>
+        <input type="text" id="password" autocomplete="off" class="input-field" name="password">
+        <br><br>
+        <button class="round-button" id="login_button" name="login_button" type="submit"> Login </button>
+
+    </form>
+    </div>
+    </div>
+</body>
+</body>
+</html>

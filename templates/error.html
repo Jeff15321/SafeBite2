@@ -56,18 +56,22 @@
 
     <div class="banner">
         <div class="navbar">
-            <img src="static/logosafewhite.png" class="logo">
+            <a href="/">
+                <img src="static/logosafewhite.png" class="logo">
+            </a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="/rest">Restaurants</a></li>
-                <li><a href="#">Admin</a></li>
+                <li><a href="/admin">Restaurant Interface</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/change_password">Change Passowrd</a></li>
+                <li><a href="/logout">Logout</a></li>
             </ul>
         </div>
         <div class="content">
-            <h1>We do not have {{rest}} as a Restaurant!</h1>
-            <p>If you are a restaurant owner, please add your Restaurant into our website!</p>
+            <h1>{{error_message}}</h1>
+
             <div>
             </div>
         </div>
+        <br><br><br><br><br>
     </div>

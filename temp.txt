@@ -1,0 +1,31 @@
+from openai import OpenAI
+import openai
+
+def ChatGPT_check_ingredient(prompt):
+    print(prompt)
+    prompt = str(prompt)
+    openai.api_key = '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'
+
+    client = OpenAI(
+        api_key = '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',
+    )
+
+    result = client.chat.completions.create(
+      model='gpt-4',
+      messages=[
+        {
+          'role': 'system',
+          'content': "I will give you a list of sublists except for the first element of the list. I want you to immediately break this down into two parts, one with the allergy which is the first element of the list I provided you,  this will be the ingredient someone is allergic to, call this ALLERGYNAME. For the second part, make it so that it is a list without the allergy, call this list the INGREDIENT LIST. Note that even if one of the sublists has multiple elements in them, still consider the whole sublist as one index. For example, if I gave you the list of [ 'nuts'', ['chestnut', 'broccoli'], ['oil'], ['tuna'], ['fish'], ['peanut butter', 'beef'] , ['beans'], ['oil'], ['oil'], ['oil']]. 'nuts' is the ALLERGYNAME, ['chestnut', 'broccoli'] is considered as one subset, they have the index of 0. ['peanut butter', 'beef'] is the 5th sublist, therefore it will have an index of 4. In the INGREDIENT LIST, contains a set of ingredients in the value of strings. I want you to output the index of all of the lists that have ingredients that are harmful to eat for someone who is allergic to the ALLERGYNAME, output this as a list. In the process of making the decision, try to dive into the causes of the allergies to assist you in making your decision, look for common foods that cause allergic reactions for the given allergy. Your output should only be one list, you output MUST BE ONLY ONE LIST, NO EXPLANATION NEEDED."
+        },
+        {
+          'role': 'user',
+          'content': prompt
+        }
+      ],
+      stream = True,
+      temperature=0.8,
+      max_tokens=64,
+      top_p=1
+    )
+    for chunk in result:
+        print(chunk.choice[0].delta.get("content",""), end="")
